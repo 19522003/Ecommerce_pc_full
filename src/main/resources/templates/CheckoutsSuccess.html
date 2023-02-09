@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu cá nhân</title>
+    <link
+      rel="icon"
+      href="https://file.hstatic.net/1000026716/file/favicon_0db2583fad1443e482491c7db08765e6.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:bold,regular&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="payment_header">
+      <div class="container header_container">
+        <div class="row">
+          <div class="col icon__shop">
+            <a
+              th:href="@{/}"
+              id="IMAGE4"
+              class="ladi-element"
+              data-replace-href="https://gearvn.com/"
+            >
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div></div
+            ></a>
+          </div>
+          <div class="col-7">
+            <div class="row link_payment">
+              <div class="col"><a th:href="@{/}">Trang chủ</a></div>
+              <div class="col"><a href="">Tin tức</a></div>
+              <div class="col"><a th:href="@{/warranty}">Bảo hành</a></div>
+              <div class="col"><a href="">Tuyển dụng</a></div>
+              <div class="col"><a href="">Liên hệ</a></div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END USER PAGE HEADER -->
+    <div class="user_menu text-center align-middle">
+      <div class="container">
+        <div class="row py-5">
+          <h1 class="text-success">Mua hàng thành công</h1>
+          <div class="success_img" style="width: 400px; height: 380px">
+            <img
+              style="width: 100%; height: 100%; object-fit: contain"
+              src="https://w.ladicdn.com/s750x750/5bf3dc7edc60303c34e4991f/tong-dai-02-20210726090011.png"
+              alt=""
+            />
+            <h3>Cảm ơn bạn đã mua hàng</h3>
+            <div class="group_action row">
+              <div class="mt-4 back_home--btn col">
+                <a
+                  class="p-2 mb-2 bg-warning text-white rounded"
+                  style="text-decoration: none; display: inline-block"
+                  th:href="@{/personal-info/orders}"
+                  ><i class="bx bx-history"></i>Xem lịch sử mua hàng</a
+                >
+              </div>
+              <div class="mt-4 back_home--btn col">
+                <a
+                  class="p-2 mb-2 bg-primary text-white rounded"
+                  style="
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                  "
+                  th:href="@{/}"
+                  ><i class="bx bxs-door-open"></i>Quay về trang chủ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
